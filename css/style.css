@@ -1466,11 +1466,25 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    background: rgba(145, 67, 253, 0.95);
+    background: linear-gradient(rgba(145, 67, 253, 0.95), rgba(145, 67, 253, 0.95)), url(../img/vitrine\ portfolio\ copie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer .container-fluid {
     padding: 60px 0 0 0;
+}
+
+.footer .footer-image {
+    position: relative;
+    text-align: right;
+    padding-right: 75px;
+}
+
+.footer .footer-image img {
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .footer .footer-info {
