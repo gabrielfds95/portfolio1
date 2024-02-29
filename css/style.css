@@ -476,7 +476,8 @@ a:focus {
 /*******************************/
 /********** About CSS **********/
 /*******************************/
-.about {
+.about
+,.info {
     position: relative;
     width: 100%;
     margin: -45px 0 45px 0;
