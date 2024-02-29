@@ -1,0 +1,14 @@
+{
+    "name": "jtg/appli-frais",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "julian tyron gabriel"
+        }
+    ],
+    "require": {}
+}

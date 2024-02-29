@@ -1,0 +1,285 @@
+body {
+    background-image: url("../cible/foret.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .content{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    vertical-align: top;
+  }
+  
+  #image{
+    background-image: url("../cible/paille.webp");
+    border-radius: 100px;
+    width: 400px;
+    height: 400px;
+  }
+  
+  #c1{
+      width: 360px;
+      height: 360px;
+      border-radius: 360px;
+      background: white;
+      justify-content: center;
+      position: absolute;
+      
+  }
+  
+  #c2{
+      width: 325px;
+      height: 325px;
+      border-radius: 325px;
+      background: rgba(199, 195, 195, 0.699);
+      justify-content: center;
+      position: absolute;
+  }
+  
+  #c3{
+      width: 285px;
+      height: 285px;
+      border-radius: 285px;
+      background: rgba(26, 24, 24, 0.582);
+      justify-content: center;
+      position: absolute;
+  }
+  
+  #c4{
+      width: 245px;
+      height: 245px;
+      border-radius: 245px;
+      background: black;
+      justify-content: center;
+      position: absolute;
+  }
+  
+  #c5{
+      width: 205px;
+      height: 205px;
+      border-radius: 205px;
+      background: rgb(14, 14, 124);
+      justify-content: center;
+      position: absolute;
+  }
+  
+  #c6{
+      width: 165px;
+      height: 165px;
+      border-radius: 165px;
+      background: blue;
+      justify-content: center;
+      position: absolute;
+  }
+  #c7{
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
+    background: rgb(112, 26, 26);
+    justify-content: center;
+    position: absolute;
+}
+
+#c8{
+    width: 85px;
+    height: 85px;
+    border-radius: 85px;
+    background: red;
+    justify-content: center;
+    position: absolute;
+}
+
+#c9{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background: rgb(201, 188, 10);
+    justify-content: center;
+    position: absolute;
+}
+
+#c10{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: yellow;
+    justify-content: center;
+    position: absolute;
+}
+
+.texte{
+  margin-top: 5px;
+  display: flex;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 0px
+}
+
+@font-face{    
+  font-family : "Driftwood";
+  src : url("../cible/Driftwood.ttf") ;
+}
+
+h1{
+  font-family: "Driftwood";
+  text-align: center;
+  font-size: 50px;
+}
+.bouton {
+  position: absolute;
+  right: 100px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 25px;
+  padding: 3px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#arba{
+  position: absolute;
+  left: 885px;
+}
+
+#fleche{
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 5;
+  left: 955px;
+  top: 638px;
+}
+
+.bouton {
+  position: absolute;
+  right: 100px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 25px;
+  padding: 3px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
+}
+.bouton1 {
+  position: absolute;
+  right: 1700px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+  width: 80px;
+  cursor: pointer;
+  margin: 5px;
+}
+.bouton2 {
+  position: absolute;
+  right: 1620px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+  width: 60px;
+  cursor: pointer;
+  margin: 5px;
+}
+.bouton3 {
+  position: absolute;
+  right: 1550px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+  width: 60px;
+  cursor: pointer;
+  margin: 5px;
+}
+.bouton4 {
+  position: absolute;
+  right: 1450px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+  width: 80px;
+  cursor: pointer;
+  margin: 5px;
+}
+#rose {
+  position: absolute;
+  justify-content: center;
+  top: 100px; 
+  left: auto;
+  right: 1550px;
+  width: 200px;
+  height: 200px;
+}
+#flecheRDV{
+position: absolute;
+ background-repeat: no-repeat;
+ z-index: 5;
+ left: 264px;
+ top: 150px;
+ animation-play-state: running;
+ animation-duration: 6s;
+ animation-name: rotate-animation;
+}
+
+@keyframes rotate-animation{
+  100%{
+    transform: rotate(2160deg);
+    }
+}
+  
+#refresh{
+  position: absolute;
+  right: 100px;
+  display: inline-block;
+  background-color: #ff0000;
+  border-radius: 15px;
+  inset: 20px #cccccc;
+  color: #300f19;
+  text-align: center;
+  font-size: 28px;
+  padding: 3px;
+  width: auto;
+  cursor: pointer;
+  margin: 5px;
+  top: 100px;
+}
+
+@media screen and (max-width: 100%) {
+
+  .container{
+      max-width: 1140px;
+      margin-inline: 0px; 
+  }
+}
