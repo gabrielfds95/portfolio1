@@ -45,13 +45,16 @@
         if (this.hash !== "") {
             event.preventDefault();
 
-            $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
+            var target = $(this.hash);
+                if (target.length) { // Vérifie si l'élément cible existe
+                    $('html, body').animate({
+                        scrollTop: $(this.hash).offset().top - 45
+                }, 1500, 'easeInOutExpo');
 
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
+                if ($(this).parents('.navbar-nav').length) {
+                    $('.navbar-nav .active').removeClass('active');
+                    $(this).closest('a').addClass('active');
+                }
             }
         }
     });
@@ -62,7 +65,7 @@
         var typed_strings = $('.hero .hero-text .typed-text').text();
         var typed = new Typed('.hero .hero-text h2', {
             strings: typed_strings.split(', '),
-            typeSpeed: 100,
+            typeSpeed: 50,
             backSpeed: 20,
             smartBackspace: false,
             loop: true
