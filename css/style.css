@@ -736,6 +736,18 @@ a:focus {
     }
 }
 
+.experience .about-word {
+    position: relative;
+    height: 100%;
+}
+
+.about .about-word iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /*******************************/
 /********* Service CSS *********/
