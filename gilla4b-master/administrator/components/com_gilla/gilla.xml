@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" method="upgrade">
+	<name>com_gilla</name>
+	<creationDate>Oct 2023</creationDate>
+	<author>SIO</author>
+	<copyright>Copyright (C) 2021-2023 SIO, all rights reserved.</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>0.6.2</version>
+	<description>COM_GILLA_DESCRIPTION</description>
+	<namespace path="src">J4xSio\Component\Gilla</namespace>
+
+	<install>             <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>           <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Frontend Site Section -->
+	<files folder="site">
+		<folder>forms</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/com_gilla.ini</language>
+		<language tag="fr-FR">language/fr-FR/com_gilla.ini</language>
+	</languages>
+	
+	<!-- Backend Site Section -->
+	<administration>
+		<menu img="class:default" link="option=com_gilla">com_gilla</menu>
+		<submenu>
+			<menu link="option=com_gilla&amp;view=affectations">com_gilla_affectations</menu>
+			<menu link="option=com_gilla&amp;view=agents">com_gilla_agents</menu>
+			<menu link="option=com_gilla&amp;view=emplacements">com_gilla_emplacements</menu>
+			<menu link="option=com_gilla&amp;view=etats">com_gilla_etats</menu>
+			<menu link="option=com_gilla&amp;view=incidents">com_gilla_incidents</menu>
+			<menu link="option=com_gilla&amp;view=priorites">com_gilla_priorites</menu>
+			<menu link="option=com_gilla&amp;view=prise_en_charges">com_gilla_prise_en_charges</menu>
+			<menu link="option=com_gilla&amp;view=types">com_gilla_types</menu>
+			<menu link="option=com_gilla&amp;view=events">com_gilla_events</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>forms</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+			<file>access.xml</file>
+			<file>config.xml</file>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/com_gilla.ini</language>
+			<language tag="en-GB">language/en-GB/com_gilla.sys.ini</language>
+			<language tag="fr-FR">language/fr-FR/com_gilla.ini</language>
+			<language tag="fr-FR">language/fr-FR/com_gilla.sys.ini</language>
+		</languages>
+	</administration>
+
+	<!-- API Section -->
+	<api>
+		<files folder="api">
+			<folder>src</folder>
+		</files>
+	</api>
+</extension>

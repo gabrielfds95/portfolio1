@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="webservices" method="upgrade">
+	<name>plg_webservices_gilla</name>
+	<creationDate>Dec 2023</creationDate>
+	<author>SIO</author>
+	<copyright>Copyright (C) 2021-2024 SIO, all rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<version>0.6.0</version>
+	<description>PLG_WEBSERVICES_GILLA_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="gilla">gilla.php</filename>
+		<folder>language</folder>
+	</files>
+</extension>

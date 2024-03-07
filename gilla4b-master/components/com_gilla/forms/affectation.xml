@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="number"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+
+		<field
+			name="date_heure_debut"
+			type="calendar"
+			label="COM_GILLA_AFFECTATIONS_DATE_HEURE_DEBUT"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+			required="false"
+		/>
+
+	    <field
+			name="date_heure_fin"
+			type="calendar"
+			label="COM_GILLA_AFFECTATIONS_DATE_HEURE_FIN"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+			required="false"
+		/>
+
+		<field
+			name="agents_id"
+			type="sql"
+			label="COM_GILLA_AGENTS"
+			default=""
+			query="SELECT ag.id, u.name FROM #__gilla_agents AS ag INNER JOIN #__users AS u ON ag.users_id=u.id ORDER BY u.name" 
+			key_field="id" value_field="name" required="false"
+		/>
+
+		<field
+			name="types_id"
+			type="sql"
+			label="COM_GILLA_TYPES"
+			default=""
+			query="SELECT id, type FROM #__gilla_types ORDER BY type" 
+			key_field="id" value_field="type" required="false"
+		/>
+
+
+		<field name="events_id" type="sql" label="COM_GILLA_EVENTS_USERS_USER" 
+			description="COM_GILLA_EVENTS_USERS_EVENT"
+			query="SELECT id, title FROM #__gilla_events ORDER BY title" 
+			key_field="id" value_field="title" required="false"
+			class="readonly"
+			readonly="true"
+		/>
+
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			size="45"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+		/>
+
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			default="1"
+			id="published"
+			class="custom-select-color-state"
+			size="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+
+	</fieldset>
+	
+	<fieldset name="picture" label="COM_GILLA_PICTURE">
+		<field
+			name="picture"
+			type="media"
+			label="COM_GILLA_PICTURE"
+		/>
+
+	</fieldset>
+
+	<fieldset name="publishing">
+		<field
+			name="created"
+			type="calendar"
+			label="COM_GILLA_CREATED"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="created_by"
+			type="user"
+			label="COM_GILLA_CREATED_BY"
+			validate="UserId"
+		/>
+
+		<field
+			name="modified"
+			type="calendar"
+			label="COM_GILLA_MODIFIED"
+			translateformat="true"
+			showtime="true"
+			size="22"
+			filter="user_utc"
+		/>
+
+		<field
+			name="modified_by"
+			type="user"
+			label="COM_GILLA_MODIFIED_BY"
+			validate="UserId"
+		/>
+
+		<field
+			name="hits"
+			type="text"
+			label="JGLOBAL_HITS"
+			default="0"
+			class="readonly"
+			readonly="true"
+			filter="unset"
+		/>
+
+	</fieldset>
+</form>

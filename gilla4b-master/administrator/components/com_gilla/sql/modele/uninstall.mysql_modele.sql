@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `gilla_events_users`;
+DROP TABLE IF EXISTS `gilla_events`;
+DROP TABLE IF EXISTS `gilla_affectations`;
+DROP TABLE IF EXISTS `gilla_prise_en_charges`;
+DROP TABLE IF EXISTS `gilla_agents`;
+DROP TABLE IF EXISTS `gilla_priorites`;
+DROP TABLE IF EXISTS `gilla_etats`;
+DROP TABLE IF EXISTS `gilla_incidents`;
+DROP TABLE IF EXISTS `gilla_types`;
+DROP TABLE IF EXISTS `gilla_emplacements`;
