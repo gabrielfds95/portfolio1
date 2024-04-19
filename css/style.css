@@ -1333,11 +1333,9 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: rgba(9, 125, 170, 0.95);
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
     background-size: contain;
 }
 
