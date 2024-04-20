@@ -1,37 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LA CIBLE</title>
-  <link href="../cible/css.cible.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>LA CIBLE</title>
+    <link rel="stylesheet" href="../cible/css.cible.css">
 </head>
 <body>
-  <h1>ROBIN HOOD'S CHALLENGE</h1>
-  <script src="script_cible.js"></script>
-  
-  <div class="content">
-    <div class="img" id="image" ></div>
-    <div class="texte" id="c1" style="color: black;">1</div>
-    <div class="texte" id="c2" style="color: black;">2</div>
-    <div class="texte" id="c3" style="color: black;">3</div>
-    <div class="texte" id="c4"style="color: white;">4</div>
-    <div class="texte" id="c5"style="color: white;">5</div>
-    <div class="texte" id="c6"style="color: white;">6</div>
-    <div class="texte" id="c7"style="color: white;">7</div>
-    <div class="texte" id="c8"style="color: white;">8</div>
-    <div class="texte" id="c9"style="color: black;">9</div>
-    <div class="texte" id="c10"style="color: black;">10</div>
-  </div> 
-  <center><img src="../cible/fleche.png" id="fleche"> </center> 
-  <center><img src="../cible/arbalete.png" id="arba"></center>
-  <img src="../cible/fleche.png" id="flecheRDV">
-  <img src="../cible/roseDesVents.png" id = "rose">
-  <div id="cmd2"> </div>
-  <div id="cmd1"> </div>
-  <button id="refresh" onclick="location.reload()">Rejouer</button>
+    <h1>ROBIN HOOD'S CHALLENGE</h1>
+    <div class="img-container-paille">
+        <img class="img-paille" src="../cible/paille.webp" alt="">
+    </div>
+    <div class="img-container-arba">
+        <img class="img-arba" id="arba" src="../cible/arbalete.png" alt="">
+        <img src="../cible/fleche.png" alt="" id="fleche" >
+    </div>
+    <div>
+        <img class="img-rose" src="../cible/roseDesVents.png" alt="">
+        <img id="flecheRDV" src="../cible/fleche.png" alt="">
+    </div>
+    <div id="score"></div>
+    <div class="cercle-container">
+        <div class="cercle10" id="cercle10">
+            1
+            <div class="cercle9" id="cercle9">
+                2
+                <div class="cercle8" id="cercle8">
+                    3
+                    <div class="cercle7" id="cercle7">
+                        4
+                        <div class="cercle6" id="cercle6">
+                            5
+                            <div class="cercle5" id="cercle5">
+                                6
+                                <div class="cercle4" id="cercle4">
+                                    7
+                                    <div class="cercle3" id="cercle3">
+                                        8
+                                        <div class="cercle2" id="cercle2">
+                                            9
+                                            <div class="cercle" id="cercle">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-btn btn1" id="cmd2"></div>
+    <div class="container-btn btn2" id="cmd1"></div>
+    <script src="script_cible.js"></script>
 </body>
-
 </html>

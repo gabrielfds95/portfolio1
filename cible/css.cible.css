@@ -1,285 +1,226 @@
-body {
-    background-image: url("../cible/foret.png");
-    background-size: 110%;
+@font-face {font-family: "Driftwood"; src: url('../cible/Driftwood.ttf');}
+
+body{
+    background-image: url(../cible/foret.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  .content{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    vertical-align: top;
-  }
-  
-  #image{
-    background-image: url("../cible/paille.webp");
-    border-radius: 100px;
-    width: 400px;
-    height: 400px;
-  }
-  
-  #c1{
-      width: 360px;
-      height: 360px;
-      border-radius: 360px;
-      background: white;
-      justify-content: center;
-      position: absolute;
-      
-  }
-  
-  #c2{
-      width: 325px;
-      height: 325px;
-      border-radius: 325px;
-      background: rgba(199, 195, 195, 0.699);
-      justify-content: center;
-      position: absolute;
-  }
-  
-  #c3{
-      width: 285px;
-      height: 285px;
-      border-radius: 285px;
-      background: rgba(26, 24, 24, 0.582);
-      justify-content: center;
-      position: absolute;
-  }
-  
-  #c4{
-      width: 245px;
-      height: 245px;
-      border-radius: 245px;
-      background: black;
-      justify-content: center;
-      position: absolute;
-  }
-  
-  #c5{
-      width: 205px;
-      height: 205px;
-      border-radius: 205px;
-      background: rgb(14, 14, 124);
-      justify-content: center;
-      position: absolute;
-  }
-  
-  #c6{
-      width: 165px;
-      height: 165px;
-      border-radius: 165px;
-      background: blue;
-      justify-content: center;
-      position: absolute;
-  }
-  #c7{
-    width: 125px;
-    height: 125px;
-    border-radius: 125px;
-    background: rgb(112, 26, 26);
-    justify-content: center;
-    position: absolute;
-}
-
-#c8{
-    width: 85px;
-    height: 85px;
-    border-radius: 85px;
-    background: red;
-    justify-content: center;
-    position: absolute;
-}
-
-#c9{
-    width: 45px;
-    height: 45px;
-    border-radius: 45px;
-    background: rgb(201, 188, 10);
-    justify-content: center;
-    position: absolute;
-}
-
-#c10{
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    background: yellow;
-    justify-content: center;
-    position: absolute;
-}
-
-.texte{
-  margin-top: 5px;
-  display: flex;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 0px
-}
-
-@font-face{    
-  font-family : "Driftwood";
-  src : url("../cible/Driftwood.ttf") ;
+    background-size: cover;
+    background-color: #8dce2b;
 }
 
 h1{
-  font-family: "Driftwood";
-  text-align: center;
-  font-size: 50px;
-}
-.bouton {
-  position: absolute;
-  right: 100px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 25px;
-  padding: 3px;
-  width: 100px;
-  cursor: pointer;
-  margin: 5px;
+    font-family: "Driftwood";
+    color: #ff0000;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 10px 5px 5px #ff0000;
 }
 
-#arba{
-  position: absolute;
-  left: 885px;
+.img-container-paille{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-paille{
+    border-radius: 20px;
+    height: 310px;
+    width: 300px;
+}
+
+.img-container-arba{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-arba{
+    position: absolute;
+    bottom: 0;
+}
+
+.img-rose{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+/* ------ Cible --------- */
+
+.cercle-container{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 10px;
+}
+
+.cercle10{
+    margin:auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: white;
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+
+.cercle9 {
+    margin:auto;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background: rgba(199, 195, 195, 0.699);
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+
+.cercle8 {
+    margin:auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(26, 24, 24, 0.582);
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+
+.cercle7 {
+    margin:auto;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: black;
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+
+.cercle6 {
+    margin:auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgb(14, 14, 124);
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+.cercle5 {
+    margin:auto;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: blue;
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+.cercle4 {
+    margin:auto;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;    
+    background: rgb(112, 26, 26);
+    text-align: center;
+}
+.cercle3 {
+    margin:auto;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: red;
+    margin-top:0, auto;
+    margin-left: 0 auto;
+    text-align: center;
+}
+.cercle2 {
+    margin:auto;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: rgb(201, 188, 10);
+    text-align: center;
+}
+.cercle{
+    margin: auto;
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background: yellow;
+}
+
+/* ------ Bouton --------- */
+
+.container-btn{
+    position: absolute;
+    top: 70%;
+    transform: translate(0, -50%);
+    font-size: 10px;
+}
+
+.btn1{
+    right: 5%;
+}
+
+.btn2{
+    left: 5%;
+}
+
+.container-btn2{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    transform: translate(0, -50%);
+    font-size: 10px;
+}
+
+button{
+    font-size: 30px;
+    padding: 5px 30px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
 }
 
 #fleche{
-  position: absolute;
-  background-repeat: no-repeat;
-  z-index: 5;
-  left: 955px;
-  top: 638px;
+    position: absolute;
+    z-index: 100; 
+    top: 818px;
+    left: 50%;
+    margin-left: -4px;
+    height: 0;
 }
 
-.bouton {
-  position: absolute;
-  right: 100px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 25px;
-  padding: 3px;
-  width: 100px;
-  cursor: pointer;
-  margin: 5px;
-}
-.bouton1 {
-  position: absolute;
-  right: 1700px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 20px;
-  padding: 3px;
-  width: 80px;
-  cursor: pointer;
-  margin: 5px;
-}
-.bouton2 {
-  position: absolute;
-  right: 1620px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 20px;
-  padding: 3px;
-  width: 60px;
-  cursor: pointer;
-  margin: 5px;
-}
-.bouton3 {
-  position: absolute;
-  right: 1550px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 20px;
-  padding: 3px;
-  width: 60px;
-  cursor: pointer;
-  margin: 5px;
-}
-.bouton4 {
-  position: absolute;
-  right: 1450px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 20px;
-  padding: 3px;
-  width: 80px;
-  cursor: pointer;
-  margin: 5px;
-}
-#rose {
-  position: absolute;
-  justify-content: center;
-  top: 100px; 
-  left: auto;
-  right: 1550px;
-  width: 200px;
-  height: 200px;
-}
 #flecheRDV{
-position: absolute;
- background-repeat: no-repeat;
- z-index: 5;
- left: 264px;
- top: 150px;
- animation-play-state: running;
- animation-duration: 6s;
- animation-name: rotate-animation;
+    position: absolute;
+    z-index: 100; 
+    left: 170px;
+    top: 170px;
+    animation-play-state: running;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-name: rotate-animation;
 }
 
-@keyframes rotate-animation{
-  100%{
-    transform: rotate(2160deg);
+#score{
+    position: absolute;
+    font-family: "Driftwood";
+    font-size: 30px;
+    color: #ff0000;
+    top: 200px;
+    right: 20%;
+    margin: 0;
+}
+
+@keyframes rotate-animation {
+    100%{
+        transform: rotate(2160deg);
     }
-}
-  
-#refresh{
-  position: absolute;
-  right: 100px;
-  display: inline-block;
-  background-color: #ff0000;
-  border-radius: 15px;
-  inset: 20px #cccccc;
-  color: #300f19;
-  text-align: center;
-  font-size: 28px;
-  padding: 3px;
-  width: auto;
-  cursor: pointer;
-  margin: 5px;
-  top: 100px;
-}
-
-@media screen and (max-width: 100%) {
-
-  .container{
-      max-width: 1140px;
-      margin-inline: 0px; 
-  }
 }
