@@ -1,11 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Portfolio BTS SIO | Gabriel Fernandes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="../img/GF.png"/>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/de7ebea4a7.js" crossorigin="anonymous"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.css">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
 </head>
-<body>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"> <img src="../img/GF.png" alt="Logo">PortFolio </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="../index.html" class="nav-item nav-link">Accueil</a>
+                <a href="../index.html" class="nav-item nav-link">A Propos</a> 
+                <a href="../index.html" class="nav-item nav-link">Parcours</a>
+                <a href="../bts.html" class="nav-item nav-link active">BTS SIO</a>
+                <a href="../projet.html" class="nav-item nav-link">Projets</a>
+                <a href="../veille.html" class="nav-item nav-link">Veilles</a>
+                <a href="#footer" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Nav Bar End -->
+
+<!-- Hero Start -->
+<div class="hero" id="home">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+                <div class="hero-content">
+                        <!-- <h2>Qu'est ce que le <b>BTS SIO</b> ?</h2> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Gilla4b Project Start -->
+
+<div class="project" id="project">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <h2>Le projet <b>Gilla4b</b></h2>
+            <br>
+            <p>Présentation du projet</p>
+            <br>
+        </div>
+        <p>Le projet GILLA a pour objectif de mettre en place une plateforme en ligne permettant aux élèves,
+         étudiants, professeurs et personnels du lycée de signaler tout type de problème rencontré dans les 
+         locaux de l'établissement. Ces problèmes peuvent inclure des incidents liés à l'éclairage, à la fermeture
+         des portes ou des fenêtres, au matériel informatique ou logiciel, et bien d'autres.</p>
+         <br><br>
+
+        <div class="project-container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>Fonctionnalités Principales</h3>
+                <br> <br>
+                <p>Interface Utilisateur</p>
+            </div>
+                <p>
+                    <li>Les utilisateurs peuvent soumettre des tickets d'incidents via une interface conviviale et
+                         intuitive.</li>
+                    <li>Ils ont la possibilité de spécifier la nature de l'incident, sa localisation, sa date et 
+                        de fournir une description détaillée du problème rencontré.</li>
+                    <li>Une version mobile de l'interface utilisateur est disponible, offrant une expérience optimisée 
+                        sur les appareils mobiles.</li>
+                </p>
+                <br>
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+             <br>
+                <p>Interface Administrateur</p>
+            </div>
+            <p>
+                <li>Les administrateurs ont un accès sécurisé à une interface backend dédiée pour gérer tous les aspects
+                     du site public (frontend) de GILLA.</li>
+                <li>Elle offre aux administrateurs les outils nécessaires pour superviser et optimiser le processus de 
+                    gestion des incidents, agents, personnels, affectation, etc, dans tout l'établissement.</li>
+            </p>
+                <br>
+            
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>Technologies Utilisées </h3>
+                <br> 
+            </p>
     
+            </div>
+            <a class="btn"
+                       style="display: block;" 
+                       href="BTS-SIO - E5 SLAM 2024 - Contexte GILLA - Doc technique pdf.pdf"
+                       target="_blank">Documentation technique</a>
+                       <br>
+            <p>
+                <li>Le projet GILLA est développé en utilisant une architecture <b>MVC</b> (Modèle-Vue-Contrôleur, Frontend comme Backend) 
+                    avec <b>Framework/CMS Joomla 4.4</b> et un développement <b>PHP</b> pour assurer une séparation claire des préoccupations et 
+                    une maintenabilité accrue du code.</li> <br>
+                Voici le schéma d’architecture logicielle : <br>
+            <div class="project-img">
+                <img src="../img/schema_archi_gilla.png" >
+            </div><br>
+           
+                <li>La version mobile de l'interface utilisateur est développée avec Android Studio en utilisant <b>Java</b> pour garantir une compatibilité
+                     et une performance optimales sur les appareils android.</li>
+                
+                <li>Une <b>API</b> de test a été spécialement développée en PHP pour pouvoir consulter
+                    la base de données GILLA à travers le framework <b>Joomla</b> par le protocole <b>http</b>.</li>
+                
+                <br>
+                Voici l'architecture générale du projet :<br><br>
+                <div class="project-img">
+                    <img src="../img/schema_archi_gen_gilla.png" >
+                </div><br>
+
+                Tout le projet est donc relié à la base de donnée <b>SQL</b> depuis <b>PhpMyAdmin</b>.
+                 
+            <br><br><br>
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>Gestion et Organisation</h3>
+                <br> <br>
+                       <p>Gestion des version</p> 
+            </div>
+            <p>
+                   La gestion des versions logicielles est faite avec le logiciel libre Git. 
+                   <li>Il permet l'enregistrement des états de la base de code (commits)</li>
+                    <li>L'organisation en branches pour développer des fonctionnalités séparément</li> 
+                    <li>Le travail collaboratif et la distribution du projet.</li><br>
+                    Chaque utilisateur peut contribuer en créant des commits et fusionner son code avec 
+                    les autres via un dépôt privé sur GitHub. Une seule branche, master, est utilisée pour 
+                    simplifier l'intégration du code.
+                </p>
+                <br><br>
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Organisation du projet</p>
+                </div>
+                <p>
+                    Le développement du projet Gilla4b a été confier par notre professeur pour toute la classe en option SLAM. 
+                    L'organisation également mise en place par a coïncidé avec notre progression pédagogique pour ce bloc.
+                    <br>
+                    La projet a donc été décomposé en trois livrable principaux liés à l’architecture du
+                    framework Joomla :
+                    <br><li>Le <b>site d'administrateur</b>, avec le développement de la partie backend du composant
+                    com_gilla</li>
+                    <li>Le <b>site public</b> incluant l’accès réservé aux utilisateurs enregistrés avec la
+                        configuration du CMS Joomla et le développement de la partie frontend du composant
+                        com_gilla.</li>
+                    <li>Le développent de <b>l’application mobile Android</b> et de <b>l’API</b> associée.</li>
+                    <br>
+                    Nous avons procédé avec le cicle en V définissant les grandes étapes du projet depuis l’analyse du cahier des charges jusqu’à
+                    la recette fonctionnelle et au déploiement :
+                </p>
+                <div class="project-img">
+                    <img src="../img/cycleV.png" >
+                </div><br>
+            
+        </div>            
+    </div>
+</div>
+<!-- Gilla4b Project End -->
+
+
+<!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s" id="footer">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-info">
+                <h2>Gabriel FERNANDES</h2>
+                <h3><a href="#bottom"><i class="fa-solid fa-map-pin"></i> &ensp; Paris (75015), France</a></h3>
+                <div class="footer-menu">
+                    <p><a href="mailto:fernandesgabriel.pro@gmail.com"><i class="fa-solid fa-envelope"></i> &ensp;
+                        fernandesgabriel.pro@gmail.com</a></p>
+                    <p><a href="https://www.linkedin.com/in/gabriel-fernandes-024a35261/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i> &ensp; Gabriel Fernandes</a></p>
+                    <p><a href="https://github.com/gabrielfds95" target="_blank"><i class="fa-brands fa-github"></i>
+                        &ensp; gabrielfds95</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <a href="#">Gabriel Fernandes </a>, Copyright 2024 ©</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to top button -->
+<a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/swiper/swiper-bundle.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="../js/main.js"></script>
 </body>
+
 </html>

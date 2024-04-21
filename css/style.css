@@ -462,6 +462,43 @@ a:focus {
     z-index: 1;
 }
 
+.section-header h3 {
+    display: inline-block;
+    margin: 0 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #ffffff;
+}
+
+.section-header h3::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 11px;
+    right: 0;
+    left: -30px;
+    background: rgba(9, 125, 170, 0.95);
+    z-index: -1;
+}
+
+.section-header h3::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 11px;
+    left: 3px;
+    background: rgba(9, 125, 170, 0.95
+
+);
+    z-index: 1;
+}
+
 .section-header h2 {
     margin: 0;
     position: relative;
@@ -906,7 +943,7 @@ a:focus {
     margin: -30px 15px 30px 15px;
     display: flex;
     align-items: center;
-    background: #ffffff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)); /* Dégradé d'opacité */
     box-shadow: 0 0 15px rgba(0, 0, 0, .12);
 }
 
@@ -937,6 +974,89 @@ a:focus {
     border-color: rgba(9, 125, 170, 0.95);
 }
 
+/*******************************/
+/******** Project CSS ********/
+/*******************************/
+.project {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+.project #project-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.project #project-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(9, 125, 170, 0.95);
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px rgba(9, 125, 170, 0.95);
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.project #project-filter li:hover,
+.project #project-filter li.filter-active {
+    color: rgba(9, 125, 170, 0.95);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 rgba(9, 125, 170, 0.95);
+    border-color: rgba(9, 125, 170, 0.95);
+}
+
+
+.project .project-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.project .project-img img {
+    position: relative;
+    width: 100%; 
+    max-width: fit-content;
+    height: 100%; 
+    object-fit: cover;
+    transition: .5s;
+    display: block; 
+    margin: 0 auto;
+}
+
+.project .project-item:hover img {
+    margin-left: 15px;
+}
+
+.project .project-container p {
+    font-size: 20px ;
+    
+}
+
+.project .project-text h3 {
+    width: calc(100% - 70px);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.project .project-item:hover a.btn {
+    color: rgba(9, 125, 170, 0.95);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 rgba(9, 125, 170, 0.95);
+    border-color: rgba(9, 125, 170, 0.95);
+}
 
 /*******************************/
 /********* Banner CSS **********/
