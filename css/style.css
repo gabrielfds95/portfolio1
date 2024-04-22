@@ -128,6 +128,12 @@ a:focus {
 .back-to-top:hover i {
     color: #414141;
 }
+@media (max-width: 768px) {
+    .back-to-top {
+        right: 5%; /* Ajuster la position à gauche */
+        bottom: 5%; /* Garder la même position verticale */
+    }
+}
 
 
 /**********************************/
@@ -1057,6 +1063,12 @@ a:focus {
     box-shadow: inset 0 0 0 0 rgba(9, 125, 170, 0.95);
     border-color: rgba(9, 125, 170, 0.95);
 }
+
+embed {
+    width: 100%;
+    height: 100vh; 
+}
+
 
 /*******************************/
 /********* Banner CSS **********/
