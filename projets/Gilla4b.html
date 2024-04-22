@@ -89,12 +89,14 @@
                 <p>Interface Utilisateur</p>
             </div>
                 <p>
+                    <ul>
                     <li>Les utilisateurs peuvent soumettre des tickets d'incidents via une interface conviviale et
                          intuitive.</li>
                     <li>Ils ont la possibilité de spécifier la nature de l'incident, sa localisation, sa date et 
                         de fournir une description détaillée du problème rencontré.</li>
                     <li>Une version mobile de l'interface utilisateur est disponible, offrant une expérience optimisée 
                         sur les appareils mobiles.</li>
+                    </ul>
                 </p>
                 <br>
 
@@ -103,10 +105,12 @@
                 <p>Interface Administrateur</p>
             </div>
             <p>
+            <ul>
                 <li>Les administrateurs ont un accès sécurisé à une interface backend dédiée pour gérer tous les aspects
                      du site public (frontend) de GILLA.</li>
                 <li>Elle offre aux administrateurs les outils nécessaires pour superviser et optimiser le processus de 
                     gestion des incidents, agents, personnels, affectation, etc, dans tout l'établissement.</li>
+                </ul>
             </p>
                 <br>
             
@@ -122,19 +126,23 @@
                        target="_blank">Documentation technique</a>
                        <br>
             <p>
+            <ul>
                 <li>Le projet GILLA est développé en utilisant une architecture <b>MVC</b> (Modèle-Vue-Contrôleur, Frontend comme Backend) 
                     avec <b>Framework/CMS Joomla 4.4</b> et un développement <b>PHP</b> pour assurer une séparation claire des préoccupations et 
-                    une maintenabilité accrue du code.</li> <br>
+                    une maintenabilité accrue du code.</li>
+                </ul> <br>
                 Voici le schéma d’architecture logicielle : <br>
             <div class="project-img">
                 <img src="../img/schema_archi_gilla.png" >
             </div><br>
+            <ul>
            
                 <li>La version mobile de l'interface utilisateur est développée avec Android Studio en utilisant <b>Java</b> pour garantir une compatibilité
                      et une performance optimales sur les appareils android.</li>
                 
                 <li>Une <b>API</b> de test a été spécialement développée en PHP pour pouvoir consulter
                     la base de données GILLA à travers le framework <b>Joomla</b> par le protocole <b>http</b>.</li>
+            </ul>
                 
                 <br>
                 Voici l'architecture générale du projet :<br><br>
@@ -142,7 +150,7 @@
                     <img src="../img/schema_archi_gen_gilla.png" >
                 </div><br>
 
-                Tout le projet est donc relié à la base de donnée <b>SQL</b> depuis <b>PhpMyAdmin</b>.
+               <p> Tout le projet est donc relié à la base de donnée <b>SQL</b> depuis <b>PhpMyAdmin</b>.</p>
                  
             <br><br><br>
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -152,13 +160,13 @@
             </div>
             <p>
                    La gestion des versions logicielles est faite avec le logiciel libre Git. 
-                   <li>Il permet l'enregistrement des états de la base de code (commits)</li>
+                  <ul><li>Il permet l'enregistrement des états de la base de code (commits)</li>
                     <li>L'organisation en branches pour développer des fonctionnalités séparément</li> 
-                    <li>Le travail collaboratif et la distribution du projet.</li><br>
-                    Chaque utilisateur peut contribuer en créant des commits et fusionner son code avec 
+                    <li>Le travail collaboratif et la distribution du projet.</li></ul><br></p>
+                   <p> Chaque utilisateur peut contribuer en créant des commits et fusionner son code avec 
                     les autres via un dépôt privé sur GitHub. Une seule branche, master, est utilisée pour 
-                    simplifier l'intégration du code.
-                </p>
+                    simplifier l'intégration du code.</p>
+                
                 <br><br>
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>Organisation du projet</p>
@@ -169,19 +177,240 @@
                     <br>
                     La projet a donc été décomposé en trois livrable principaux liés à l’architecture du
                     framework Joomla :
-                    <br><li>Le <b>site d'administrateur</b>, avec le développement de la partie backend du composant
-                    com_gilla</li>
-                    <li>Le <b>site public</b> incluant l’accès réservé aux utilisateurs enregistrés avec la
-                        configuration du CMS Joomla et le développement de la partie frontend du composant
-                        com_gilla.</li>
-                    <li>Le développent de <b>l’application mobile Android</b> et de <b>l’API</b> associée.</li>
-                    <br>
-                    Nous avons procédé avec le cicle en V définissant les grandes étapes du projet depuis l’analyse du cahier des charges jusqu’à
+                    <ul><br>
+                        <li>Le <b>site d'administrateur</b>, avec le développement de la partie backend du composant
+                            com_gilla</li>
+                        <li>Le <b>site public</b> incluant l’accès réservé aux utilisateurs enregistrés avec la
+                            configuration du CMS Joomla et le développement de la partie frontend du composant
+                            com_gilla.</li>
+                        <li>Le développent de <b>l’application mobile Android</b> et de <b>l’API</b> associée.</li>
+                    </ul>
+                    <br> 
+                </p>
+                <p>Nous avons procédé avec le cicle en V définissant les grandes étapes du projet depuis l’analyse du cahier des charges jusqu’à
                     la recette fonctionnelle et au déploiement :
                 </p>
+               
                 <div class="project-img">
                     <img src="../img/cycleV.png" >
                 </div><br>
+                <p>
+                    Voici le planning générale durant l'année pour ce projet : 
+                </p> <br>
+                <div class="project-img">
+                    <img src="../img/planning_gilla.png" >
+                </div><br>
+
+                <br><br><br>
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>Bas De données SQL PhpMyAdmin </h3>
+                <br> <br>
+                       <p>Conception</p> 
+            </div>
+                 <p>
+                    Voici un exemple de création de table et de PhpMyAdmin avec toute les tables :
+                    <br><br>
+                 </p>
+
+            <div class="project-img">
+                    <img src="../img/table_incident.png" >
+            </div><br>
+            <br><br>
+            <div class="project-img">
+                <img src="../img/phpma_gilla.png" >
+            </div><br>
+            <br><br>
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>BackEnd com_gilla </h3>
+                <br> <br>
+                       <p>Conception</p> 
+            </div>
+                 <p>
+                    L’architecture du composant com_gilla respecte l’arborescence et les règles de nommage
+                    définies pour CMS Joomla 4.2 pour la structure MVC (Modèle-Vue-Contrôleur).
+                    <br> <br>
+                    Voici un exemple du <b>modèle</b> là où sont gérés les données du site :
+                 </p>  
+                 <div class="project-img">
+                    <img src="../img/model_gilla.png">
+            </div><br> <br>
+            <p>
+                De la <b>vue</b> là où l'affichage est géré et géneré :
+            </p>
+            <div class="project-img">
+                <img src="../img/vue_gilla.png" >
+            </div><br>
+
+             <p>
+                Et enfin du <b>controller</b> qui appelle le modèle et traite les informations :
+            </p>
+            <div class="project-img">
+                <img src="../img/controller_gilla.png" >
+            </div><br>
+                <p>
+                    Les pages des templates (présentation des données) et des tables (manipulation des données et modèle)  sont également importante.
+                    <br>
+                </p>
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <br> <br>
+                    <p>Présentation du site</p> 
+            </div>
+            <p>
+                <b>Voici comment se présente le site d'administration de Gilla4b :</b>
+                <br>
+                <u>La page de login : </u>
+            </p>
+            <div class="project-img">
+                <img src="../img/login_ad_gilla.png" >
+            </div><br> <br>
+            <p>
+                <u>La page d'accueil :</u>
+            </p>
+            <div class="project-img">
+                <img src="../img/accueil_ad_gilla.png" >
+            </div><br> <br>
+
+            <p>
+                <u>La liste d'un incident :</u>
+            </p>
+            <div class="project-img">
+                <img src="../img/liste_ad_gilla.png" >
+            </div><br> <br>
+
+            <p>
+                <u>La liste de détail d'un incident :</u>
+            </p>
+            <div class="project-img">
+                <img src="../img/detail_ad_gilla.png" >
+            </div><br> <br>
+
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>FrontEnd com_gilla </h3>
+                <br> <br>
+                       <p>Conception</p> 
+            </div>
+                 <p>
+                    Comme pour le BackEnd le FrontEnd est conçu en MVC dans le meme dossier de code.
+                     La où le chemin du BE est gilla4b/administrator/components/com_gilla celui du FE est simplement gilla4b/components/com_gilla 
+                     <br> <br>
+                     Voici alors les exemples de conceptions : <br><br>
+                     Le <b>modèle</b>:
+                  </p>  
+                  <div class="project-img">
+                     <img src="../img/modelf_gilla.png">
+             </div><br> <br>
+             <p>
+                 La <b>vue</b> :
+             </p>
+             <div class="project-img">
+                 <img src="../img/vuef_gilla.png" >
+             </div><br><br>
+ 
+              <p>
+                 Et du <b>controller</b>:
+             </p>
+             <div class="project-img">
+                 <img src="../img/controllerf_gilla.png" >
+             </div><br>
+                
+             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                     <br> <br>
+                     <p>Présentation du site</p> 
+             </div>
+             <p>
+                 <b>Voici comment se présente le site d'utilisateur de Gilla4b :</b>
+                 <br>
+                 <u>La page de login : </u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/login_f_gilla.png" >
+             </div><br> <br>
+             <p>
+                 <u>La page d'accueil :</u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/accueil_f_gilla.png" >
+             </div><br> <br>
+ 
+             <p>
+                 <u>La liste d'un incident :</u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/liste_f_gilla.png" >
+             </div><br> <br>
+ 
+             <p>
+                 <u>La liste de détail d'un incident :</u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/detail_f_gilla.png" >
+             </div><br> <br>   
+            
+
+             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>Android Gilla4b </h3>
+                <br> <br>
+                       <p>Conception</p> 
+            </div>
+                 <p>
+                    Pour l'application android développé en Java voici sa structure : 
+                     <br>
+                  </p>  
+                  <div class="project-img">
+                     <img src="../img/structure_and.png">
+             </div><br> <br>
+             <p>
+                L’arborescence « app » contient les dossiers « manifests », « java » qui contient les activités
+                (contrôleurs et modèles codés en JAVA) et « res » qui contient notamment le dossier
+                « layout » des écrans codés en XML (vues).
+                 Voici des exemples de codes. <br> <br>
+                 <b>Manifests :</b>
+             </p>
+             <div class="project-img">
+                 <img src="../img/manifest.png" >
+             </div><br><br>
+ 
+              <p>
+                 Java <b>Incident</b> :
+             </p>
+             <div class="project-img">
+                 <img src="../img/incidentJ.png" >
+             </div><br>
+
+             <p>
+                Res <b>Layout activity_incident</b> :
+            </p>
+            <div class="project-img">
+                <img src="../img/layout.png" >
+            </div><br>
+                
+             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                     <br> <br>
+                     <p>Présentation de l'application :</p> 
+             </div>
+             <p>
+                 <br>
+                 <u>La page d'accueil : </u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/accueilA.png" >
+             </div><br> <br>
+             <p>
+                 <u>La liste des incidents :</u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/incidentA.png" >
+             </div><br> <br>
+ 
+             <p>
+                 <u>La liste de détail d'un incident :</u>
+             </p>
+             <div class="project-img">
+                 <img src="../img/IncidentAd.png" >
+             </div><br> <br>
+ 
             
         </div>            
     </div>
