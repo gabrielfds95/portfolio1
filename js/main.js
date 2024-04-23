@@ -130,11 +130,4 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-window.addEventListener('load', function() {
-    // Vérifiez si la page actuelle est la page des projets
-    if (window.location.pathname.includes('/projet.html')) {
-        // Rechargez la page uniquement si elle est sur la page des projets
-        console.log("La page des projets a été rechargée avec succès.");
-    }
-});
 
