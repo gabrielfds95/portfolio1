@@ -19,10 +19,10 @@
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/swiper/swiper-bundle.css">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/swiper/swiper-bundle.css">
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
@@ -76,61 +76,261 @@
             <p>Présentation de l'entreprise</p>
             <br>
         </div>
-        <p>Le projet Swiss Pharma est un projet scolaire réalisé par groupe de trois. Notre groupe s'est attelé à répondre
-            aux besoins d'un client fictif de l'industrie pharmaceutique, Swiss Pharma. Notre objectif était de développer
-            un site web dédié à la gestion efficace des fiches de frais des agents par le service comptable. En utilisant 
-            la méthode Agile et en combinant nos compétences en développement web et en conception d'interface utilisateur, 
-            nous avons créé une solution web "applis frais".
+        <p>
+            J'ai effectuer mes deux stages au seins de l'entreprise d'EasyBourse qui est une enterprise
+            de conseiller boursier.
+             
         </p>
         <br><br>
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <br>
+            <p>Contexte et Organisation de l'équipe</p>
+            <br>
+        </div>
+        <p>
+            J'étais dans une équipe de développeur et ils travaillaient avec la methode agile SCRUM.
+            Les sprint durait deux semaines avec des daily scrum (réunion journalière), 
+            des sprint planning (réunion) à chaque début de sprint et des sprint reviews à chaque fin de sprint.
+            <br><br>
+            Toutes les reunions se font sur google meet. On utilisait donc google calendar pour organiser tout cela.
+            <br><br><br>
+            Pendant chaque sprint review et planning les taches organisé avec l'équipe informatique (MOA et Equipe dev), 
+            placement des tickets dans Redmine et compte rendu des tâches effectués. <br>
+            Redmine est un système de gestion de projets open-source qui offre des fonctionnalités 
+            telles que la gestion des problèmes, la gestion des tâches, le suivi du temps, la collaboration et bien plus encore.
+            <br> <br>
+            Voici un exemple d'un planning de tickets (UserStories) sur Redmine :
+        </p>
 
-        <div class="project-container">
+        <div class="project-img">
+            <img src="../img/sprintplanning.png">
+        </div><br> <br>
+
+        <p>
+            Un ticket avec sous taches, etc. :
+        </p>
+        <div class="project-img">
+            <img src="../img/ticket_redmine.png">
+        </div><br> <br>
+
+
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h3>Technologies Utilisées</h3>
+                <h3> Premier Stage</h3>
+            </div>
+            <p>
+                Notre environnement de travail était sous linux avec le gestionnaire de conteneur Docker pour avoir un environnement local.
+                L'utilisation de commande dans le terminale était très fréquente pour lancer le conteneur et notre environnement :
+            </p>
+                <div class="project-img">
+                    <img src="../img/commande_docker.png">
+                </div>
+                Commande Bash pour lancer le conteneur => docker dans le terminal pour accéder au projet EasyScrum en local. <br><br>
+                Commande pour rentrer dans un conteneur :
+                <div class="project-img">
+                    <img src="../img/commande_conteneur.png">
+                </div><br><br><br>
+            <p>
+                Lors de ce premier stage, mon tuteur nous a appris les bases de la POO (Programmation Orienté Object).  <br>
+                On a commencer à coder un projet en Php puis en JavaScript sur un projet nomé EasyScrum.
+                Un projet mis en place pour remplacer Redmine (malheuresement abandonné quelques mois plus tard).
+            </p>
+            <br>
+           
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Premier exercice :</p>
+            </div>
+            <p>
+                 Créer une petite carte météo en récuperant les info avec une api qui récupère les info de l'api de Météo France.
+                <br><br>
+                Pour cela on découvre les apis ;<br>
+                Interface de programmation qui permet à deux applications logicielles de communiquer entre elles et d’échanger des données de 
+                manière réciproque, quel que soit le langage de programmation utilisé. Les API servent de points d'accès à des logiciels qui ne vous appartiennent pas.
+                <br><br>
+                Appel de l’api météo en php avec :
+            </p>
+            <div class="project-img">
+                <img src="../img/api_php.png">
+            </div><br><br><br>
+
+            <p>
+                Après avoir fait l’appel de l’api nous devons faire l’api qui appelle elle-même cette API en React (Bibliothèque Javascript) :
+
+            </p>
+
+            <div class="project-img">
+                <img src="../img/react.png">
+            </div><br><br><br>
+            <p>
+                Et la vue de la carte :
+            </p>
+            <div class="project-img">
+                <img src="../img/vuereact.png">
+            </div><br><br><br>
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Résultat</p>
+            </div>
+            <p>Voici la petite case de météo à côtés du reste de la page d'accueil :</p>
+
+            <div class="project-img">
+                <img src="../img/cartemeteo.png">
+            </div><br><br><br>
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Deuxième exercice :</p>
+            </div>
+            <p>
+                Ajouter une case de note dans la page d'accueil de EasyScrum. <br><br>
+                Voici la maquette faite sur figma :
+            </p>
+            <div class="project-img">
+                <img src="../img/notefigma.png">
+            </div><br><br><br>
+
+            <p>
+                Création du component note pour faciliter les importations et le rendre indépendant par
+                 la suite car on fera aussi un appel d’api pour avoir les notes de chacun et ainsi de suite.
+                 <br><br>
+                 Installation de studio 3T qui est un environnement de développement intégré (IDE) et un outil
+                  client très utilisé spécifiquement pour MongoDB. Il offre une interface conviviale avec de 
+                  nombreuses fonctionnalités qui aident les développeurs, les administrateurs de bases de données
+                   et les analystes de données à interagir efficacement avec les bases de données MongoDB.
+                   <br><br>Tout cela afin de rajouter des notes les traiter par la suite dans le code avec l'appel de l'api.
+                <br><br>
+            </p>
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Résultat</p>
+            </div>
+
+            <p>Voici la petite case de note à côtés du reste de la page d'accueil et de la carte météo :</p>
+
+            <div class="project-img">
+                <img src="../img/note_ac.png">
+            </div><br><br>
+            <div class="project-img">
+                <img src="../img/note_meteo.png">
+            </div><br><br><br>
+
+
+
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <h3>Deuxième Stage</h3>
+            </div>
+            <p>
+                Dans le même environnement de travail qu'au premier stage mon tuteur me donne plus de responsabilité avec une longue tache. <br>
+                 Accès à la base de données du site d'EasyBourse, d'identifiants pour le site d'administrateur
+                (Extranet) et projet consequent. <br><br>
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Mission</p>
+                </div>
+                Automatiser les test TNR (Test de Non Regression) sur le site principal, afin de facilité la tache au MOA pour tester le site avec une MEP (Mise en production). 
+                <br><br>
+
+            </p>
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Organisation</p>
+            </div>
+            <p>
+            
+                Mon ticket a duré la totalité de ce stage avec 5sp (SprintPoint) ;
+            </p>
+
+            <div class="project-img">
+                <img src="../img/ticket_redmine.png">
+            </div><br> <br>
+            <p>
+                Je devais automatisé les tests de chaque fonctionnalités du site en testant chaque faille de sécurité pour la recette (site avant la MEP) et de l'extranet.
+                <br>
+                Un tableau excel a été crée pour recenser chaque test et pour le créer. <br> <br>
+                Voici un exemple de test demandé :
+            </p>
+            <div class="project-img">
+                <img src="../img/test_excel.png">
+            </div><br> <br>
+            <p>
+                Dans cette page :
+            </p>
+            <div class="project-img">
+                <img src="../img/easybourse_msg.png">
+            </div><br> <br>
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Technologies Utilisées</p>
             </div>
             <p>
                 <ul>
-                    <li>Langage de programmation : PHP, JavaScript</li>
-                    <li>Base de données : MySQL, SQL</li>
-                    <li>Librairies : font awesome, Bootstrap</li>
+                    <li>Le développement des test a été fait en TypeScript (JavaScript).</li>
+                    <li>Utilisation de PlayWright.  Playwright est une bibliothèque d'automatisation
+                     open source pour les tests de navigateur et le web scraping développée par Microsoft et lancée le 31 janvier 2020.</li>
                 </ul>
             </p>
-            <br>
-
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h3>Fonctionnalités</h3>
+                <p>Conception</p>
             </div>
             <p>
-                <ul>
-                    <li>Page de connexion pour les utilisateurs avec différents niveaux d'accès.</li>
-                    <li>Page de visualisation de la liste des fiches de frais avec options de filtre et de modification.</li>
-                    <li>Page de détail d'une fiche de frais avec formulaire de modification.</li>
-                    <li>Page d'ajout de nouvelles fiches de frais.</li>
-                    <li>Page de profil pour la gestion des informations personnelles des utilisateurs.</li>
-                    <li>Page d'aide avec FAQ organisée en accordéon.</li>
-                </ul>
+                Pour suivre le test précédemment demandé où l'on devait se connecter à l'extranet faire un message d'info puis 
+                se connecter a la recette pour vérifier si le message a bien été envoyé. <br> <br>
+                J'ai donc crée donc le dossier MessageInfo dans le projet E2E (nom du projet de test playwright) dans le
+                dossier test  avec le fichier de spec (fichier ou l’on appelle le test) et l’index.
+                Voici le code de ce test : 
             </p>
+            <div class="project-img">
+                <img src="../img/dossier_e2e.png">
+            </div><br> <br>
+            <p>
+                Voici le code du fichier de spec :
+            </p>
+            <div class="project-img">
+                <img src="../img/spec_e2e.png">
+            </div><br> <br>
+            <p>
+                Et l'index :
+            </p>
+            <div class="project-img">
+                <img src="../img/index1_e2e.png">
+            </div><br> <br>
             <br>
-
+            <p>
+                Il y a eu des tests moin robuste que celui-ci mais également d'autre nécessitant une api.
+                <br>
+                En effet, pour un test où un nouveau mot de passe ai été envoyé par sms, une api est requise pour récupérer le code OTP. Les fonctions ont été directement 
+                développé dans le code du site afin d'envoyer le code OTP pour effectuer le test. <br><br>
+                Voici un exemple de développement d'api :
+            </p>
+            <div class="project-img">
+                <img src="../img/php_api.png">
+            </div><br> <br>
+            <p>
+                Et de comment l'api est utilisé
+            </p>
+            <div class="project-img">
+                <img src="../img/img_api.png">
+            </div><br> <br>
+            <p>
+                Les fonctions sont ensuite appelé dans les tests la nécessessitant comme dans cet exemple ;
+            </p>
+            <div class="project-img">
+                <img src="../img/api_test.png">
+            </div><br> <br>
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h3>Code du Projet</h3>
+                <p>Tests</p>
             </div>
             <p>
-                Dans ce projet, nous avons mis en œuvre une architecture MVC (Modèle-Vue-Contrôleur) pour garantir une structure 
-                organisée et modulaire de notre code. Notre stack technologique comprenait PHP pour le back-end, JavaScript pour 
-                la logique front-end, Bootstrap pour l'interface utilisateur, et MySQL pour la gestion de la base de données.
+                Les tests se faisaient donc avec playwright. <br>
+                Je les lançais en ligne de commande dans le terminal de Visual Studio Code. 
             </p>
-            <br>
-
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <h3>Documentation et Tests</h3>
-            </div>
+            <div class="project-img">
+                <img src="../img/commande_test.png">
+            </div><br> <br>
             <p>
-                Nous avons utilisé la méthode agile pour itérer rapidement et répondre efficacement aux besoins du client. 
-                Nous avons donc découpé le projet sous forme de sprint. Pour chaque sprint, nous avons fait une maquette, 
-                un planning, des tests fonctionnels. Nous avons également amélioré au fur et à mesure des sprints notre analyse,
-                notre guide utilisateur et notre diagramme de classe.
+                Avec l'environemment du teste (la recette), le lancement de la plateforme de test (npx playwright), le nom du test et enfin le mode de 
+                visionnage de celui ci (debug pour bien visualiser sa fonctionnalité).
+                <br><br>
+                Voici la fenetre playright quand on passe en mode ui(interface utilisateur) :
             </p>
+            <div class="project-img">
+                <img src="../img/playwright.png">
+            </div><br> <br>
         </div>            
     </div>
 </div>
@@ -175,18 +375,18 @@
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/typed/typed.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/isotope/isotope.pkgd.min.js"></script>
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="lib/swiper/swiper-bundle.min.js"></script>
+<script src="../lib/easing/easing.min.js"></script>
+<script src="../lib/wow/wow.min.js"></script>
+<script src="../lib/waypoints/waypoints.min.js"></script>
+<script src="../lib/typed/typed.min.js"></script>
+<script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="../lib/isotope/isotope.pkgd.min.js"></script>
+<script src="../lib/lightbox/js/lightbox.min.js"></script>
+<script src="../lib/swiper/swiper-bundle.min.js"></script>
 
 <!-- Contact Javascript File -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
+<script src="../mail/jqBootstrapValidation.min.js"></script>
+<script src="../mail/contact.js"></script>
 
 <!-- Template Javascript -->
 <script src="../js/main.js"></script>
